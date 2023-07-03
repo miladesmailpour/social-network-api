@@ -1,0 +1,31 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "NoSql",
+  "main": "server.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladesmailpour/social-network-api.git"
+  },
+  "keywords": [],
+  "author": "miladesmailpour",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miladesmailpour/social-network-api/issues"
+  },
+  "homepage": "https://github.com/miladesmailpour/social-network-api#readme",
+  
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}

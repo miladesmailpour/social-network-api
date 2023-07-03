@@ -80,7 +80,6 @@ module.exports = {
     },
     
     async createFriend(req, res) {
-        console.log(req.body)
         try {
             const user = await User.findOneAndUpdate(
                 { _id: req.params.userId },

@@ -54,6 +54,7 @@ module.exports = {
             if (!users) {
                 return res.status(404).json({ message: `User with the ID ${req.params.userId} NOT found` });
             }
+            res.json(users);
         }
         catch (err) {
             res.status(500).json(err);

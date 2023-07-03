@@ -76,10 +76,11 @@ module.exports = {
     },
     
     async createFriend(req, res) {
+        console.log(req.body)
         try {
             const user = await User.findOneAndUpdate(
                 { _id: req.params.userId },
-                { $addtoSet: { friends: req.body } },
+                { $push: { friends: req.body._id } },
                 { runValidators: true, new: true })
             if (!user) {
                 return res.status(404).json({ message: `User with the ID ${req.params.userId} NOT found` });

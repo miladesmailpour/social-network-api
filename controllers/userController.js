@@ -64,7 +64,12 @@ module.exports = {
     async deleteUser(req, res) {
         try {
             const users = await User.findOneAndDelete({ _id: req.params.userId });
-            const thought = await Thought.findOneAndDelete({ thoughts: users.thoughts });
+            console.log(users.thoughts)
+            const thoughts = users.thoughts;
+            thoughts.forEach(async (thought) => {
+                await Thought.findOneAndDelete({ _id: thought });
+            })
+            // const thought = await Thought.findOneAndDelete({ thoughts: users.thoughts });
             if (!users) {
                 return res.status(404).json({ message: `User with the ID ${req.params.userId} NOT found` });
             }
@@ -93,7 +98,6 @@ module.exports = {
     },
 
     async deleteFriend(req, res) {
-        console.log(req.body)
         try {
             const user = await User.findOneAndUpdate(
                 { _id: req.params.userId },

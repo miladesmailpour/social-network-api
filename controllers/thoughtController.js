@@ -83,9 +83,10 @@ module.exports = {
         try {
             const thought = await Thought.findOneAndUpdate(
                 { _id: req.params.thoughtId },
-                { $addtoSet: { reactions: req.body } },
-                { runValidators: true, new: true }
+                { $push: { reactions: req.body } },
+                { new: true }
             )
+            // const thought = await Thought.findOne({ _id: req.params.thoughtId })
             if (!thought) {
                 return res.status(404).json({ message: `No reaction found with the thought ID ${req.params.thoughtId}.`});
             }
@@ -100,7 +101,7 @@ module.exports = {
         try {
             const thought = await Thought.findOneAndUpdate(
                 { _id: req.params.thoughtId },
-                { $pull: { reaction: { reactionId: req.params.reactionId } } },
+                { $pull: { reactions: { reactionId: req.body.reactionId } } },
                 { runValidators: true, new: true })
             if (!thought) {
                 return res.status(404).json({ message: `No thought found with the reaction ID ${req.params.reactionId}.` });

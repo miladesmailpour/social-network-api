@@ -64,7 +64,6 @@ module.exports = {
     async deleteUser(req, res) {
         try {
             const users = await User.findOneAndDelete({ _id: req.params.userId });
-            console.log(users.thoughts)
             const thoughts = users.thoughts;
             thoughts.forEach(async (thought) => {
                 await Thought.findOneAndDelete({ _id: thought });

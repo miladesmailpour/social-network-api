@@ -16,7 +16,7 @@ module.exports = {
         try {
             const thought = await Thought.findOne({ _id: req.params.thoughtId })
                 .select('-__v');
-            if (!thoughts) {
+            if (!thought) {
                 return res.status(404).json({ message: `Thought with the ID ${req.params.thoughtId} NOT found` });
             }
             res.json(thought);

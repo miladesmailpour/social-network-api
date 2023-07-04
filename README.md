@@ -2,13 +2,13 @@
 
 ## Description
 
-- In the modern day social network could be a useful tools to help people share their thought
+- In the modern-day social network could be useful tools to help people share their thought
 
-- Helping people share their thought and take advantage of other opinion also connected with others
+- Helping people share their thought and take advantage of other opinions also connected with others
 
 - a simple social network back-end application
 
-- MongoDb, Express, Dotenv, software design and architecture, async/await, and more
+- MongoDB, Express, Dotenv, software design and architecture, async/await, and more
 
 ## Table of Contents
 
@@ -48,7 +48,7 @@ GIVEN a social network API
 WHEN I enter the command to invoke the application
 THEN my server is started and the Mongoose models are synced to the MongoDB database
 WHEN I open API GET routes in Insomnia for users and thoughts
-THEN the data for each of these routes is displayed in a formatted JSON
+THEN the data for each of these routes are displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete users and thoughts in my database
 WHEN I test API POST and DELETE routes in Insomnia
@@ -64,11 +64,11 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ## How to Contribute
 
 Challenges repository
-This is an open-source project which has Licensed by MIT which allows you to contribute and used open source codes used in this repo (All Branches).
+This is an open-source project Licensed by MIT which allows you to contribute and used open source codes used in this repo (All Branches).
 More info: https://g.co/kgs/QWcHhF
 
-- Branches are named as modules [n] and each one of them is a unique challenge.
-- Master Branch contains the last solved challenge. (the read me you are reading through, it is a default guide when NO challenge is available to help you do a pre-setup.)
+- Branches are named as modules [n] and each is a unique challenge.
+- Master Branch contains the last solved challenge. (the read me you are reading through, is a default guide when NO challenge is available to help you do a pre-setup.)
 
 # How to use the module and deploy
 
@@ -76,11 +76,11 @@ More info: https://g.co/kgs/QWcHhF
 
   # Https URL :
 
-        git clone https://github.com/miladesmailpour/challanges.git
+        git clone https://github.com/miladesmailpour/social-network-api.git
 
   # ssh URL :
 
-        git clone git@github.com:miladesmailpour/challanges.git
+        git clone git@github.com:miladesmailpour/social-network-api.git
 
   # Checking the fetch/pull and push URL :
 
@@ -109,7 +109,7 @@ More info: https://g.co/kgs/QWcHhF
   # Verifing :
        git status
   # [Make the change you wish to have]
-       What do you think needed to improve?
+       What do you think needs to improve?
   # Commiting to local and updating the GitHub repo:
          git add .
          git commit -m "[your comment]"

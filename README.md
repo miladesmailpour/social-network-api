@@ -22,7 +22,7 @@
 
 tech Talk and how to run, walkthrough video on ([Goggle Dirve](https://drive.google.com/file/d/14gh0f0EzkngPL31a3TuwdSnjPxBVS_Ls/view?usp=sharing))
 
-How to use APIs, walkthrough video on ([Goggle Dirve](https://drive.google.com/file/d/18rgPBry2VNOg3a44K3fbQFAjzaz71meb/view?usp=sharing
+How to use APIs, walkthrough video on ([Goggle Dirve](https://drive.google.com/file/d/18rgPBry2VNOg3a44K3fbQFAjzaz71meb/view?usp=sharing))
 
 ))
 
